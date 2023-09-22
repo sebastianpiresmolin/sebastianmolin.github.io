@@ -22,6 +22,7 @@ function handleSubmitForm(e) {
     if (input.value != '') {
         addTodo(input.value);
         todoArray.push(input.value);
+        input.value = ''; // Clear the input field
     }
     else {
         window.alert("You need to write something!")
